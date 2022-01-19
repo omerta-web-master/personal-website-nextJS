@@ -21,12 +21,12 @@ const Showcase = () => {
 							I am Web <span>Developer</span>
 						</h1>
 						<div className={styles.button__group}>
-							<a href='' className={styles.primary__btn}>
+							<a href='#projects' className={styles.primary__btn}>
 								LATEST PROJECTS
 							</a>
-							<a href='' className={styles.secondary__btn}>
+							{/* <a href='' className={styles.secondary__btn}>
 								MORE ABOUT ME
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>
