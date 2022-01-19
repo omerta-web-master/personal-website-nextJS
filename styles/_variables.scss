@@ -1,0 +1,48 @@
+$primary-color: #f00404;
+$secondary-color: #e65100;
+$dark-color: #262424;
+
+$primary-font: "Montserrat";
+$secondary-font: "Playfair Display";
+
+$animation-speed-showcase: 1.5s;
+
+$breakpoints: (
+	"xs": 300px,
+	"sm": 568px,
+	"md": 768px,
+	"lg": 968px,
+	"xl": 1200px,
+	"xxl": 2300px,
+);
+
+@mixin xs {
+	@media (max-width: map-get($breakpoints,"xs" )) {
+		@content;
+	}
+}
+@mixin sm {
+	@media (max-width: map-get($breakpoints,"sm" )) {
+		@content;
+	}
+}
+@mixin md {
+	@media (max-width: map-get($breakpoints,"md" )) {
+		@content;
+	}
+}
+@mixin lg {
+	@media (max-width: map-get($breakpoints,"lg" )) {
+		@content;
+	}
+}
+@mixin xl {
+	@media (max-width: map-get($breakpoints,"xl" )) {
+		@content;
+	}
+}
+@mixin xxl {
+	@media (max-width: map-get($breakpoints,"xxl" )) {
+		@content;
+	}
+}

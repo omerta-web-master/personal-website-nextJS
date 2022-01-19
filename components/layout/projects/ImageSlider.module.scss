@@ -1,0 +1,38 @@
+.sliderContainer {
+	overflow-x: hidden;
+}
+
+.slider {
+	display: flex;
+	transition: all 0.2s ease;
+}
+
+.slide {
+	flex-shrink: 0;
+	width: 100%;
+}
+
+.controllers {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	margin-top: 0.5rem;
+}
+
+.controller {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background-color: white;
+	border: 1px solid black;
+	transition: all 0.3s linear;
+
+	&.active,
+	&:hover {
+		transform: scale(1.4);
+		background-color: rgb(23, 63, 70);
+		border: 1px solid rgb(159, 222, 226);
+	}
+}

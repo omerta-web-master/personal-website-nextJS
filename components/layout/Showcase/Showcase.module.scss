@@ -1,0 +1,188 @@
+@import "../../../styles/variables";
+
+.showcase__section {
+	width: 100%;
+	height: 100vh;
+	min-height: 600px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+
+	@include md {
+		background-color: $dark-color;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $dark-color;
+		transform: skew(20deg) translateX(-50%);
+		z-index: 2;
+		animation: animateFromLeft $animation-speed-showcase ease-out;
+
+		@include md {
+			display: none;
+		}
+
+		@keyframes animateFromLeft {
+			from {
+				width: 50%;
+			}
+		}
+	}
+
+	.showcase__container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 4;
+	}
+
+	.showcase__content {
+		flex: 1;
+		transform: translateY(-50px);
+
+		.hello__message {
+			display: flex;
+			align-items: center;
+			opacity: 0;
+			animation: animateFromTop $animation-speed-showcase 0.4s ease-out forwards;
+			.line {
+				width: 100px;
+				height: 2px;
+				background-color: $primary-color;
+				margin-right: 1rem;
+			}
+
+			h4 {
+				font-family: $secondary-font, serif;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				color: white;
+				font-weight: 400;
+			}
+		}
+
+		.title {
+			color: white;
+			font-family: $secondary-font, serif;
+			margin: 0;
+			padding: 0;
+			font-size: 3rem;
+			@include sm {
+				font-size: 2.2rem;
+			}
+
+			span {
+				color: $primary-color;
+			}
+		}
+
+		.title__primary {
+			opacity: 0;
+			animation: animateFromTop $animation-speed-showcase 0.3s ease-out forwards;
+		}
+		.title__secondary {
+			opacity: 0;
+			animation: animateFromTop $animation-speed-showcase 0.2s ease-out forwards;
+		}
+
+		.button__group {
+			margin-top: 3rem;
+			a {
+				display: block;
+				padding: 0.5rem 1rem;
+				max-width: 200px;
+				text-align: center;
+				font-family: $primary-font;
+				color: white;
+				margin-bottom: 1rem;
+				transition: all 0.2s linear;
+				font-weight: 400;
+			}
+
+			.primary__btn {
+				background-color: $primary-color;
+				opacity: 0;
+				animation: animateFromTop $animation-speed-showcase 0.1s ease-out
+					forwards;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+			.secondary__btn {
+				border: 1px solid $primary-color;
+				animation: animateFromTop $animation-speed-showcase ease-out;
+				&:hover {
+					background-color: white;
+					color: black;
+					font-weight: 500;
+				}
+			}
+		}
+
+		@keyframes animateFromTop {
+			from {
+				opacity: 0;
+				transform: translateY(-40px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+	}
+
+	.showcase__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 60%;
+		background: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80")
+			no-repeat center center/ cover;
+		z-index: 1;
+		animation: animateFromRight $animation-speed-showcase ease-out;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: $dark-color, $alpha: 0.3);
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 700px;
+			height: 100%;
+			background-color: rgb(0, 0, 0);
+			transform: skew(20deg) translateX(-70%);
+			animation: none;
+		}
+
+		@include xxl {
+			width: 80%;
+		}
+
+		@include md {
+			display: none;
+		}
+
+		@keyframes animateFromRight {
+			from {
+				width: 25%;
+			}
+		}
+	}
+}

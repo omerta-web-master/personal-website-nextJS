@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Playfair+Display:wght@400;900&display=swap");
+@import "./variables";
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+	@include md {
+		font-size: 15px;
+	}
+	@include sm {
+		font-size: 14px;
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	padding: 0rem 1rem;
+}
+
+.main__container {
+	overflow-x: hidden;
+}
+
+.btn {
+	border: none;
+}

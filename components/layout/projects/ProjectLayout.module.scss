@@ -1,0 +1,36 @@
+@import "../../../styles//variables.scss";
+
+.project__container {
+	width: 100%;
+	min-height: 400px;
+	opacity: 0;
+	&.animate {
+		animation: animateFromTop 1s ease-in forwards;
+	}
+}
+
+.project {
+	display: flex;
+	gap: 3rem;
+	padding: 4rem 0px;
+
+	@include md {
+		flex-direction: column-reverse;
+	}
+
+	& > div {
+		flex: 1;
+	}
+}
+
+@keyframes animateFromTop {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
