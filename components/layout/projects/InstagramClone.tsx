@@ -10,7 +10,7 @@ import img4 from "../../../assets/images/instaClone4.jpg";
 
 const images = [img1, img2, img3, img4];
 const projectName = "instagramClone";
-const liveLink = "";
+const liveLink = "https://instagramclonereact.vercel.app/";
 const repoLink = "https://github.com/omerta-web-master/Instagram-clone";
 
 const InstagramClone = () => {
