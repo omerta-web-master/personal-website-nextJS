@@ -10,10 +10,10 @@ import MovieApp from "./MovieApp";
 const Projects = () => {
 	return (
 		<section id='projects' className={styles.projects__section}>
+			<InstagramClone />
 			<ECommerce />
 			<BugTracker />
 			<MovieApp />
-			<InstagramClone />
 			<Pasolino />
 			<Barberya />
 		</section>
