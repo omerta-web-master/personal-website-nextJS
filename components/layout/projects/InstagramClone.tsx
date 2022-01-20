@@ -22,7 +22,7 @@ const InstagramClone = () => {
 			<div className={styles.project__info}>
 				<h1 className={styles.project__title}>Instagram Clone</h1>
 				<p>
-					Instagram clone. In this proejct I used TypeScrypt. I tried my best to
+					Instagram clone. In this project I used TypeScrypt. I tried my best to
 					follow the best coding and architecture patters.
 				</p>
 				<p>Functionality:</p>
