@@ -9,7 +9,7 @@ import ProjectNav from "./ProjectNav";
 
 const images = [img1, img2, img3];
 const projectName = "shoesGenius";
-const liveLink = "https://shoes-genius.herokuapp.com/";
+const liveLink = "https://e-commerce-platform-ochre.vercel.app/";
 const repoLink = "https://github.com/omerta-web-master/e-commerce-platform";
 
 const ECommerce = () => {
