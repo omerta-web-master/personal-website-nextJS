@@ -29,13 +29,13 @@ const Header = () => {
 					<nav className={styles.navbar}>
 						<ul>
 							<li>
-								<a href='#' className={styles.active}>
+								<a href='' className={styles.active}>
 									home
 								</a>
 								<div className={styles.line}></div>
 							</li>
 							{/* <li>
-								<a href='#'>contact</a>
+								<a href='/contact'>contact</a>
 								<div className={styles.line}></div>
 							</li> */}
 							<li>

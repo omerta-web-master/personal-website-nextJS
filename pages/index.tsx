@@ -3,6 +3,7 @@ import Header from "../components/layout/Header/Header";
 import Showcase from "../components/layout/Showcase/Showcase";
 import Projects from "../components/layout/projects/Projects";
 import Head from "next/head";
+import useTrackUsers from "../components/layout/hooks/useTrackUsers";
 
 const index = () => {
 	return (
