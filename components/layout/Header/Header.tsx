@@ -29,7 +29,7 @@ const Header = () => {
 					<nav className={styles.navbar}>
 						<ul>
 							<li>
-								<a href='' className={styles.active}>
+								<a href='#home' className={styles.active}>
 									home
 								</a>
 								<div className={styles.line}></div>

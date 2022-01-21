@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Showcase = () => {
 	return (
-		<section className={styles.showcase__section}>
+		<section id='home' className={styles.showcase__section}>
 			<div className='container' style={{ height: "100%" }}>
 				<div className={styles.showcase__container}>
 					<div className={styles.showcase__content}>
